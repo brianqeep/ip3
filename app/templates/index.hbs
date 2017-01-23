@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Message Board</a><br>
+         <p class="navigator">{{#link-to 'about'}}About Us{{/link-to}}   {{#link-to 'contact'}}Contact Us{{/link-to}}</p>
+       </div>
+       <div id="navbar" class="navbar-collapse collapse">
+         <form class="navbar-form navbar-right" role="search">
+           <div class="form-group">
+             <input type="text" class="form-control" placeholder="Search">
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+         </form>
+       </div><!--/.navbar-collapse -->
+     </div>
+   </nav>
+<div class="container mainbody">
+
+
+  <h1>Message Board</h1>
+  <h2>Ask or give an answer to a question</h2>
+
+  <ul>
+    {{#each model as |message|}}
+      {{message-tile message = message}}
+    {{/each}}
+  </ul>
+
+  {{new-message saveMessage2="saveMessage3"}}
+
+</div>

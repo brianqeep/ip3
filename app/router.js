@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('message-board');
+  this.route('about');
+  this.route('contact');
+  this.route('message');
 });
 
 export default Router;

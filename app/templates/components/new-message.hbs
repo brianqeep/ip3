@@ -1,0 +1,26 @@
+{{#if addNewMessage}}
+  <h2>New Question</h2>
+    <div>
+      <form>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value="author" id="author"}}
+        </div>
+
+        <div class="form-group">
+          <label for="question">Question</label>
+          {{input value="question" id="question"}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">notes</label>
+          {{input value="notes" id="notes"}}
+        </div>
+
+        <button {{action 'saveMessage1'}}>Post Question </button>
+      </form>
+    </div>
+  {{else}}
+    <button {{action 'messageFormShow'}}> New Question</button>
+{{/if}}

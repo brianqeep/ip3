@@ -1,0 +1,11 @@
+{ "messages": [{
+    "question": "What is javascript?",
+    "author": "Sam",
+    "notes": "Just asking"
+  },
+  {
+    "question": "What is the meaning of a model?",
+    "author": "Jimmy",
+    "notes": "I am curious"
+    }]
+}
