@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('message-board');
   this.route('about');
   this.route('contact');
-  this.route('message');
+  this.route('message', {path: '/message/:message_id'});
 });
 
 export default Router;

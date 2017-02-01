@@ -1,11 +1,19 @@
 { "messages": [{
-    "question": "What is javascript?",
     "author": "Sam",
-    "notes": "Just asking"
+    "note": "Just asking",
+    "question": "What is javascript?"
   },
   {
-    "question": "What is the meaning of a model?",
     "author": "Jimmy",
-    "notes": "I am curious"
-    }]
+    "note": "I am curious",
+    "question": "What is the meaning of a model?"
+  }],
+  "answers": [{
+    "author": "Willian",
+    "content": "that is the answer"
+  },
+  {
+    "author": "Justus",
+    "content": "well, google the answer"
+  }]
 }

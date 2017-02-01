@@ -19,19 +19,17 @@
          </form>
        </div><!--/.navbar-collapse -->
      </div>
-   </nav>
-<div class="container mainbody">
+   </nav><br><br><br>
 
-
+<div class="container body1">
   <h1>Message Board</h1>
   <h2>Ask or give an answer to a question</h2>
 
   <ul>
-    {{#each model as |message|}}
-      {{message-tile message = message}}
+    {{#each model.messages as |message|}}
+      {{message-tile  message=message}}
     {{/each}}
   </ul>
 
   {{new-message saveMessage2="saveMessage3"}}
-
 </div>

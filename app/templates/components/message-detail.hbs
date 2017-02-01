@@ -1,0 +1,11 @@
+<li>
+  <h3>{{heading}}</h3>
+  <p>{{answer.content}}</p>
+</li>
+
+<h2> Answers </h2>
+<ul>
+  {{#each messsage.answers as |answer|}}
+    {{message answer=answer }}
+  {{/each}}
+</ul>

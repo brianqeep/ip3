@@ -1,20 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewMessage: false,
+  updateMessageForm: false,
   actions: {
-    messageFormShow() {
-      this.set('addNewMessage', true);
+    updateMessageForm() {
+      this.set('updateMessageForm', true);
     },
-
-    saveMessage1() {
+    update(message) {
       var params = {
         author: this.get('author'),
         note: this.get('note'),
         question: this.get('question')
       };
-      this.set('addNewMessage', false);
-      this.sendAction('saveMessage2', params);
+      this.set('updateMessageForm', false);
+      this.sendAction('update', message, params);
     }
   }
 });
