@@ -14,6 +14,12 @@ export default Ember.Route.extend({
       newMessage.save();
       this.transitionTo('index');
     },
+    upVote(message) {
+      var voteScore = message.get("vote");
+      message.set("vote", (voteScore -= 1));
+      message.save();
+      this.refresh();
+    },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
