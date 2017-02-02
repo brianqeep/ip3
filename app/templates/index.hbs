@@ -27,9 +27,10 @@
 
   <ul>
     {{#each model.messages as |message|}}
-      {{message-tile  message=message upVote="upVote"}}
+      {{message-tile  message=message upVote="upVote" destroyMessage='destroyMessage'}}
     {{/each}}
   </ul>
 
   {{new-message saveMessage2="saveMessage3"}}
+  {{update-message message=model update="update"}}
 </div>
